@@ -1,0 +1,67 @@
+@import "_reset";
+
+body {
+    font-size: 18px;
+    font-family: Arial, sans-serif;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.section {
+    width: 447.5px;
+    background-color: #0690cf;
+    border: 3px solid #0075b2;
+    height: 310px; // later max
+    .section__form-title {
+        margin: 23px 0px 0px 25px;
+        font-size: 1.7em;
+        letter-spacing: -0.15px;
+    }
+    .section__line {
+        width: 100%;
+        height: 2px;
+        margin: 14px 0px 0px 0px;
+        background-color: #fff;
+    }
+    .section__form {
+        margin: 31px 68px 22px 22px;
+        width: 359px;
+    }
+    .section__label {
+        &.label_mail {
+            display: block;
+        }
+        &.label_pass {
+            display: inline-block;
+            width: 168px;
+            margin: 25px 0px 0px 0px;
+        }
+        &.label_repeat-pass {
+            display: inline-block;
+            width: 168px;
+            margin: 0px 0px 0px 18px;
+        }
+    }
+    .section__inp {
+        border: 1px solid #b3b5ba;
+        margin: 3px 0px 0px 0px;
+        &.inp_mail {
+            width: 100%;
+        }
+        &.inp_pass {
+            width: 166px;
+        }
+        &.inp_repeat-pass {
+            width: 166px;
+        }
+    }
+    .section__btn {
+        margin: 36px 0px 0px 0px;
+        padding: 6px 11px;
+        background-color: #ffdf7f;
+        cursor: pointer;
+    }
+}
