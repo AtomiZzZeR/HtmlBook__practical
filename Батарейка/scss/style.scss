@@ -1,0 +1,53 @@
+@import "_reset";
+
+@mixin style-battery($w, $bc) {
+    content: "";
+    display: inline-block;
+    width: $w;
+    height: 100%;
+    background-color: $bc;
+}
+
+.section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+
+    .section__box-battery {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 184px;
+        height: 219px;
+    }
+
+    .section__battery {
+        width: 169px;
+        height: 57px;
+        border: 4px solid #000;
+
+        &::after {
+            content: "";
+            display: block;
+            width: 7px;
+            height: 22px;
+            background-color: #000;
+            float: right;
+            margin-right: -11px;
+            margin-top: 17.5px;
+        }
+
+        &.battery_red::before {
+            @include style-battery(55px / 169px * 100%, #ed1c24);
+        }
+
+        &.battery_orange::before {
+            @include style-battery(110px / 169px * 100%, #ffc60b);
+        }
+
+        &.battery_green::before {
+            @include style-battery(100%, #00a055)
+        }
+    }
+}

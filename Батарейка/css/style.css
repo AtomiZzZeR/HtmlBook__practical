@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+*::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+:active,
+:hover,
+:focus {
+  outline: 0;
+  outline-offset: 0;
+}
+
+a:focus, a:active {
+  outline: 0;
+}
+
+a:visited, a:hover {
+  text-decoration: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+textarea {
+  font-family: inherit;
+}
+
+button {
+  cursor: pointer;
+  font-family: inherit;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+.section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+}
+
+.section .section__box-battery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 184px;
+  height: 219px;
+}
+
+.section .section__battery {
+  width: 169px;
+  height: 57px;
+  border: 4px solid #000;
+}
+
+.section .section__battery::after {
+  content: "";
+  display: block;
+  width: 7px;
+  height: 22px;
+  background-color: #000;
+  float: right;
+  margin-right: -11px;
+  margin-top: 17.5px;
+}
+
+.section .section__battery.battery_red::before {
+  content: "";
+  display: inline-block;
+  width: 32.54438%;
+  height: 100%;
+  background-color: #ed1c24;
+}
+
+.section .section__battery.battery_orange::before {
+  content: "";
+  display: inline-block;
+  width: 65.08876%;
+  height: 100%;
+  background-color: #ffc60b;
+}
+
+.section .section__battery.battery_green::before {
+  content: "";
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  background-color: #00a055;
+}
