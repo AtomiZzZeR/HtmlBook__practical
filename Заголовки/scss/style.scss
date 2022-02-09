@@ -1,0 +1,40 @@
+@import "_reset";
+
+body {
+    font-family: serif;
+    background-color: #dedeca;
+}
+
+@mixin header-style($fz, $c) {
+    margin: 0px 0px 30px 0px;
+    font-weight: bold;
+    font-size: $fz;
+    color: $c;
+}
+
+.section {
+    margin: 27px 0px 0px 11px;
+
+    &__h1 {
+        font-family: sans-serif;
+        @include header-style(2.5rem, #673300);
+    }
+
+    &__h2 {
+        @include header-style(2rem, #000);
+    }
+
+    &__h3 {
+        @include header-style(1.5rem, #a36a33);
+    }
+
+    &__text {
+        font-size: 1.2rem;
+    }
+
+    &__link {
+        text-decoration: underline;
+        color: #577f2b;
+        // border-bottom: 2px solid #577f2b;
+    }
+}
