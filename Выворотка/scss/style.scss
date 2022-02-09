@@ -1,0 +1,12 @@
+@import "_reset";
+
+.section {
+    &__text {
+        padding: 72px 0px 0px 26px;
+        font-size: 4rem;
+        line-height: 0.8;
+        font-family: Impact, sans-serif;
+        color: #fff;
+        background-color: #f00;
+    }
+}
