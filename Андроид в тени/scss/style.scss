@@ -1,0 +1,14 @@
+@import "_reset";
+
+.section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+
+    &__box-img {
+        padding: 5px 8px;
+        box-shadow: inset 0px 0px 6px;
+    }
+}
+
