@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+.section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.section__input {
+    color: red;
+    width: 200px;
+}
+
+.section__input:focus::-webkit-input-placeholder {
+    color: #fff;
+} 
