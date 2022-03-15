@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    font-family: Georgia, serif;
+}
+
+._container {
+    width: 274px;
+    margin: 0px auto;
+    padding: 27px 0px;
+}
+
+.section {
+    height: 100%;
+}
+
+.section__title {
+    margin: 0px 0px 26px 0px;
+    font-weight: 400;
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+.section__year {
+    text-align: center;
+}
+
+.section__text {
+    font-family: serif;
+    margin: 16px 0px 0px 0px;
+    font-size: 1rem;
+    line-height: 1.2;
+    word-spacing: 10px;
+}
