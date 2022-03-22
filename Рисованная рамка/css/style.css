@@ -1,0 +1,18 @@
+html,
+body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rect {
+    width: 427px;
+    height: 112px;
+    background-color: #ffcc00;
+    border: 16px solid #000;
+    border-image: url("../img/border.jpg") 25 25 25 25 round;
+}
