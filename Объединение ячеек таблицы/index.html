@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Объединение ячеек таблицы</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        p {
+            display: block;
+            width: 300px;
+            margin: 10px 0px 0px 0px;
+            text-align: center;
+        }
+        table {
+            width: 300px;
+            height: 127px;
+        }
+        .td {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <p>Добыча драгоценных камней</p>
+    <table border="1"> 
+        <tr>
+            <th></th>
+            <th>2010</th>
+            <th>2012</th>
+            <th>2014</th>
+        </tr>
+        <tr>
+            <td>Сапфиры</td>
+            <td rowspan="2">1483</td>
+            <td>4532</td>
+            <td>6743</td>
+        </tr>
+        <tr>
+            <td>Рубины</td>
+            <td>3835</td>
+            <td>7482</td>
+        </tr>
+        <tr>
+            <td>Алмазы</td>
+            <td>683</td>
+            <td colspan="2" class="td">238</td>
+        </tr>
+    </table>
+</body>
+
+</html>
