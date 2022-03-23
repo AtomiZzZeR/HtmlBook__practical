@@ -1,0 +1,28 @@
+.block {
+    display: flex;
+    align-items: center;
+    height: 30px;
+    background-color: #333;
+}
+
+.link {
+    padding: 0px 0px 0px 7px;
+}
+
+.link_1 {
+    color: #d70a0a;
+}
+
+.link_2 {
+    color: #09dcdc;
+}
+
+.link_3 {
+    color: #dcdc09;
+}
+
+.link:not(:last-child):after {
+    content: "|";
+    color: #fff;
+    padding: 0px 0px 0px 6px;
+}
